@@ -8,7 +8,7 @@
                 <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="75%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6>USD . '.$row['PRICE'].'</h6>
-                <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark">View Item</a></p> 
+                <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5">View Item</a></p> 
             </div>';
         }
     }

@@ -6,9 +6,15 @@ include('dbh/config.php');
 <html>
 <head>
     <?php include('head.php');?>
+    
 </head>
 <body>
-
+<!-- navBar Start -->
+<div class="text-white py-3" style="background-color: #0A2558;">
+        <h1>&nbsp;&nbsp;Add to Cart</h1>
+    </div>
+        <a href="index.php" class="btn btn-dark btn-md m-2"><i class='bx bx-home' style='color:#ffffff'  ></i> Go Back To Front Page</a> 
+<!-- navBar End -->
 
 <div class="container">
 <h1 class="text-center">Add to cart in PHP</h1> <hr> 
@@ -115,7 +121,7 @@ include('dbh/config.php');
                               <tr>
                               <td> </td>
                                   <td>
-                                     <input type='submit' value='add to Cart' name='addCart' class='btn btn-success'>
+                                     <input type='submit' value='Add to Cart' name='addCart' class='btn btn-success'>
                                   </td>
                               </tr>
                           </table>

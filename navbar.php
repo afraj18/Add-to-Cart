@@ -21,7 +21,7 @@
 </head>
 <body>
    
-<nav class="navbar navbar-expand-lg navbar-dark  sticky-top">
+<nav class="navbar navbar-expand-sm navbar-dark  border-bottom sticky-top">
         <div class="container">
  	           <!-- <div class="LogIcon">
                 <i class="fas fa-mobile-alt m-2 fa-2x"></i>
@@ -30,19 +30,18 @@
                
             <div class="collapse navbar-collapse " id="main_nav">
 	            <ul class="navbar-nav ms-auto ">
-		            <li class="nav-item "><a class="nav-link text-light  m-1" href="#"> <i class='bx bx-home' style='color:#ffffff'  ></i> Home</a></li>
-		            <li class="nav-item"><a class="nav-link text-light  m-1" href="#"> Contact</a></li>
-                <li class="nav-item "><a class="nav-link text-light  m-1" href="#"> Aboout Us </a></li>
+		            <li class="nav-item "><a class="nav-link text-light  " href="#"> <i class='bx bx-home' style='color:#ffffff'  ></i> Home</a></li>
+		            <li class="nav-item"><a class="nav-link text-light  " href="#"> Contact</a></li>
+                <li class="nav-item "><a class="nav-link text-light " href="#"> Aboout Us </a></li>
 	            </ul>
             
         </div> 
         
     <form class="form-inline my-2 my-lg-0 ">
-      <input class="form-control my-2 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control my-2 mr-sm-2 btn-sm" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0 btn-sm" type="submit">Search</button>
     </form>
-    <a href="viewcart.php" class="float-right m-1 ml-5"><i class='bx bxs-shopping-bag bx-md' style='color:#ffffff'  ></i>  </a>
-    <a href="#" class="float-right m-1"><i class='bx bx-heart bx-md' style='color:#fdfafa'  ></i></a>
-   
+    <a href="viewcart.php" class="float-right m-1 ml-5"><i class='bx bxs-shopping-bag bx-sm' style='color:#ffffff'  ></i>  </a>
+    <a href="#" class="float-right m-1"><i class='bx bx-heart bx-sm' style='color:#fdfafa'  ></i></a>
   </div>
 </nav>

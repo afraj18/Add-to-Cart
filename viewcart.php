@@ -9,10 +9,16 @@ session_start();
     <?php include('head.php');?>
 </head>
 <body>
-<h1>Cart</h1>
+<!-- navbarStart -->
+    <div class="text-white py-3" style="background-color: #0A2558;">
+        <h1>&nbsp;&nbsp;Manage Your Cart</h1>
+    </div>
+        <a href="index.php" class="btn btn-dark btn-md m-2"><i class='bx bx-home' style='color:#ffffff'  ></i> Go Back To Front Page</a> 
+<!-- navBar End -->
+
     <div class="container">
-        <div class="row">
-            <a href="index.php">Home</a> <br> 
+        <div class="row mt-2">
+           
           
             <table class="table table-bordered">
             <tr>
@@ -43,7 +49,7 @@ session_start();
                     <td>USD. {$values['price']}</td>
                     <td>{$values["qty"]}</td>
                     <td>USD. {$amount}</td>
-                    <td><a href='viewcart.php?del={$values["pid"]}'>Remove</a></td>
+                    <td><a href='viewcart.php?del={$values["pid"]}' class='btn btn-danger btn-sm'>Remove</a></td>
                     
                     </tr>";
                 }

@@ -21,17 +21,17 @@
            <form>
                 <fieldset>
                     <div class="form-group">
-                        <a href="#">
-                        <button type="button" class="btn btn-outline-light ml-2 mt-4 form-control text-left "><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Product Catagories</button>
+                        <a href="MobilePhone/ProductCat.php">
+                        <button type="button" class="btn btn-outline-light ml-2 mt-4 form-control text-left "><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Product Categories</button>
                         </a>
                     </div>
                     <div class="form-group">
-                        <a href="#">
+                        <a href="viewcart.php">
                         <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Shopping Cart</button>
                         </a>
                     </div>
                     <div class="form-group">
-                        <a href="#">
+                        <a href="wishList.php">
                         <button type="button" class="btn btn-outline-light ml-2  form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Wish List</button>
                         </a>
                     </div>

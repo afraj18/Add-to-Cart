@@ -9,9 +9,23 @@
 </head>
 <body>
 <div class="container m-4 p-4 border rounded">
-    <h1 class="font-weight-bold"> <i class="fab fa-apple m-1 fa-1x"> </i> Apple Phones</h1> <br>    
+    <h1 class="font-weight-bold text-dark"> <i class="fab fa-apple m-1 fa-1x"> </i> Apple Phones</h1> <br>    
     <div class="row ">
-        <?php include('AppleMob.php')?>
+    <?php 
+        $sql = "SELECT * FROM product where BNAME = 'Apple' limit 4";
+        $res = $conn->query($sql);
+
+        if($res->num_rows > 0){
+            while($row = $res ->fetch_assoc()){
+                echo '<div class="col-md-3  text-center">
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive " height="55%" width="65%"> <br><br>
+                <p><strong>'.$row['PNAME'].'</strong></p>
+                <h5>USD . '.$row['PRICE'].'</h5>
+                <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control">View Item</a></p>
+            </div>';
+        }
+    }
+    ?>
     </div> <br> <br>
     <h1 class="">Samsung Phones</h1> 
     <div class="row">

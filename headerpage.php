@@ -3,21 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php //include('head.php');?>
+<?php include('head.php');?>
 <link rel="stylesheet" href="css/header.css">
-<style>
-
-/* .heading{
-    font-size: 750%;
-    text-shadow:5px -1px 42px #e7f137;
-} */
-/* .heading {
-  font-family : courier,arial,helvetica;
-  font-size: 1rem;
-  color:black;
-} */
-
-</style>
 </head>
 <body>
   
@@ -37,6 +24,8 @@
             
         </p>
     </div>
+
+    <!-- LogoutFunction -->
     <!-- <div class="col-md-2" role="group" aria-label="...">
     <div class="profile-details">
         <img src="images/logo.jpg">
