@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <?php //include('head.php');?>
-
+<link rel="stylesheet" href="css/header.css">
 <style>
 
 /* .heading{
@@ -17,38 +17,6 @@
   color:black;
 } */
 
-@include media-breakpoint-up(sm) {
-  .heading {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-    .heading {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-    .heading {
-    font-size: 1.6rem;
-  }
-}
-.header{
-    background-color : white;
-    top: 48px; /* shadow is at bottom of element, so at 48 + 16 = 64px */
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
-}
-hr{
-    background-color:black;
-}
-.img-fluid{
-    /* text-align : center; */
-    
-}
-.btn-info{
-  background-color: blue;
-}
 </style>
 </head>
 <body>
@@ -56,36 +24,43 @@ hr{
   <!-- MainSticky-->
   <div class="row header">
     <div class="col-md-2">
-    <br>
-        <img src="images/logo.jpg" alt="MOBiCO" class = "img-fluid img-responsive center-block">
+        <img src="images/logo.jpg" alt="MOBiCO" class = " img">
     </div> 
-    <div class="col-md-8">
+    <div class="col-md-10">
         <p>
-            <h1 class="heading" style="font-family: 'Limelight', cursive; font-weight:900px">MOBiCO</h1> 
-            <span style="font-size : 170%; font-family: 'Limelight', cursive;" class="">Dealers in Mobile and Accessories
+            <h1 class="heading" style="font-family: 'Limelight', cursive; font-weight:900px">MOBiCO
+            <span style="font-size : 50%; font-family: 'Limelight', cursive;" class="">Dealers in Mobile and Accessories
             </span>
+            </h1> 
+            
             <hr>
-            <h5 style="font-family: 'Limelight', cursive;" >Ruwanwella,Sri Lanka</h5>
+            
         </p>
     </div>
-    <div class="col-md-2 btn-group-vertical" role="group" aria-label="...">
-          <form action="">
+    <!-- <div class="col-md-2" role="group" aria-label="...">
+    <div class="profile-details">
+        <img src="images/logo.jpg">
+        <span class="admin_name">Amas MJA</span>
+        <i class='bx bx-chevron-down'></i>
+      </div> 
+         
+         <form action="">
             <fieldset>
               <div class="form-group"> 
-                <a href="login.php" class="btn btn-sm btn-dark mt-2 img-fluid form-control"> Log In</a> 
+                <a href="login.php" class="btn btn-sm btn-dark  form-control"> <i class='bx bx-log-out'></i> Log In</a> 
               </div>
               <div class="form-group">
-                <a href="signup.php" class="btn btn-sm btn-dark img-fluid form-control " > Sign Up</a> <br>
+                <a href="signup.php" class="btn btn-sm btn-dark  " > Sign Up</a> 
               </div>
-
               <div class="form-group">
-                <a href="logout.php" class="btn btn-sm btn-dark img-fluid form-control" > Log Out</a> <br>
+                <a href="logout.php" class="btn btn-sm btn-dark form-control" > Log Out</a> 
               </div>
          
           
             </fieldset>
-          </form>
-    </div>
+          </form> 
+      
+    </div> -->
     
 </div>
  

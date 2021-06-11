@@ -4,7 +4,12 @@
 <html>
 <head>
     <?php include('head.php');?>
-    <link rel="stylesheet" href="css/main.css">
+<style>
+.mainNav {
+  background-color: #0A2558;
+  margin-top:20px;
+}
+</style>
 </head>
 <body>
     <!-- Header Section -->
@@ -12,10 +17,38 @@
 <?php include('navbar.php');?>
     <!-- Body Section   -->
     <div class="row ">
-        <div class="col-md-2 bg-secondary   ">
-           <H1>This is my Side Bar Panel</H1> 
+        <div class="col-md-3 mainNav rounded ">
+           <form>
+                <fieldset>
+                    <div class="form-group">
+                        <a href="#">
+                        <button type="button" class="btn btn-outline-light ml-2 mt-4 form-control text-left "><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Product Catagories</button>
+                        </a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">
+                        <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Shopping Cart</button>
+                        </a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">
+                        <button type="button" class="btn btn-outline-light ml-2  form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Wish List</button>
+                        </a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">
+                        <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> Latest Product Blogs and Reviews</button>
+                        </a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">
+                        <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> </button>
+                        </a>
+                    </div>
+                </fieldset>
+           </form>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9 ">
             <div class="container">
                 <?php include_once('MobilePhone/mobile.php')?>
             </div>

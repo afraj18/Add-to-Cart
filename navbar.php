@@ -28,16 +28,16 @@
                 <i class="fas fa-headphones-alt m-2  mr-5 fa-2x"></i>
                 </div>  -->
                
-            <div class="collapse navbar-collapse" id="main_nav">
-	            <ul class="navbar-nav ms-auto">
-		            <li class="nav-item"><a class="nav-link text-light border border-light m-1" href="#"> <i class='bx bx-home' style='color:#ffffff'  ></i> Home</a></li>
-		            <li class="nav-item"><a class="nav-link text-light border border-light m-1" href="#"> Contact</a></li>
-                <li class="nav-item"><a class="nav-link text-light border border-light m-1" href="#"> Aboout Us </a></li>
+            <div class="collapse navbar-collapse " id="main_nav">
+	            <ul class="navbar-nav ms-auto ">
+		            <li class="nav-item "><a class="nav-link text-light  m-1" href="#"> <i class='bx bx-home' style='color:#ffffff'  ></i> Home</a></li>
+		            <li class="nav-item"><a class="nav-link text-light  m-1" href="#"> Contact</a></li>
+                <li class="nav-item "><a class="nav-link text-light  m-1" href="#"> Aboout Us </a></li>
 	            </ul>
             
         </div> 
         
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0 ">
       <input class="form-control my-2 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
