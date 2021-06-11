@@ -55,7 +55,7 @@ session_start();
             }
             else{
                 echo "<script>alert('Please select a product');</script>";
-                header("location: index.php");
+                //header("location: index.php");
             }
             ?>
             </table>

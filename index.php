@@ -4,16 +4,27 @@
 <html>
 <head>
     <?php include('head.php');?>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<h1 class="text-center">Add to cart in PHP</h1>  <hr>
-<a href="viewcart.php" class="float-right m-2"><img src="images/cartIcon.png" alt="" class="image-responsive" width="50px" height="50px"></a>
+    <!-- Header Section -->
+<?php include('headerpage.php');?>
+<?php include('navbar.php');?>
+    <!-- Body Section   -->
+    <div class="row ">
+        <div class="col-md-2 bg-secondary   ">
+           <H1>This is my Side Bar Panel</H1> 
+        </div>
+        <div class="col-md-10">
+            <div class="container">
+                <?php include_once('MobilePhone/mobile.php')?>
+            </div>
+        </div>
+        
+    </div>
 
-<div class="container">
-    <?php include_once('mobile.php')?>
-</div>
-
-
+<!-- <h1 class="text-center">Add to cart in PHP</h1>  <hr> -->
+<!-- Body Section -->
 
 </body>
 </html>
