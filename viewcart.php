@@ -8,6 +8,10 @@ session_start();
 <head>
     <?php include('head.php');?>
 </head>
+
+<style>
+  
+</style>
 <body>
 <!-- navbarStart -->
     <div class="text-white py-3" style="background-color: #0A2558;">

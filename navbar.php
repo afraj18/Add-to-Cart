@@ -22,26 +22,26 @@
 <body>
    
 <nav class="navbar navbar-expand-sm navbar-dark  border-bottom sticky-top">
-        <div class="container">
+      
  	           <!-- <div class="LogIcon">
                 <i class="fas fa-mobile-alt m-2 fa-2x"></i>
                 <i class="fas fa-headphones-alt m-2  mr-5 fa-2x"></i>
                 </div>  -->
                
-            <div class="collapse navbar-collapse " id="main_nav">
+            <div class="collapse navbar-collapse" id="main_nav">
 	            <ul class="navbar-nav ms-auto ">
-		            <li class="nav-item "><a class="nav-link text-light  " href="#"> <i class='bx bx-home' style='color:#ffffff'  ></i> Home</a></li>
-		            <li class="nav-item"><a class="nav-link text-light  " href="#"> Contact</a></li>
-                <li class="nav-item "><a class="nav-link text-light " href="#"> Aboout Us </a></li>
-	            </ul>
+		            <li class="nav-item "><a class="nav-link text-light" href="index.php"> <i class='bx bx-home' style='color:#ffffff'  ></i> Home</a></li>
+		            <li class="nav-item"><a class="nav-link text-light" href="#"><i class='bx bxs-contact'></i> Contact</a></li>
+                <li class="nav-item "><a class="nav-link text-light" href="#"><i class='bx bx-info-circle' ></i> About Us </a></li>
+	           
+              </ul>
             
-        </div> 
+            </div> 
         
+    
+    
     <form class="form-inline my-2 my-lg-0 ">
       <input class="form-control my-2 mr-sm-2 btn-sm" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0 btn-sm" type="submit">Search</button>
     </form>
-    <a href="viewcart.php" class="float-right m-1 ml-5"><i class='bx bxs-shopping-bag bx-sm' style='color:#ffffff'  ></i>  </a>
-    <a href="#" class="float-right m-1"><i class='bx bx-heart bx-sm' style='color:#fdfafa'  ></i></a>
-  </div>
 </nav>

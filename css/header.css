@@ -1,21 +1,3 @@
-@include media-breakpoint-up(sm) {
-    .heading {
-        font-size: 1.2rem;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    .heading {
-        font-size: 1.4rem;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    .heading {
-        font-size: 1.6rem;
-    }
-}
-
 .header {
     background-color: white;
     top: 48px;
@@ -38,3 +20,28 @@ hr {
     object-fit: cover;
     margin: 10px
 }
+
+.heading {
+    font-weight: bolder;
+    background-color: white;
+    font-family: 'Limelight', cursive;
+}
+
+@include media-breakpoint-up(sm) {
+    .heading {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .heading {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .heading {
+        font-size: 1.6rem;
+    }
+}
+

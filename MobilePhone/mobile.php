@@ -21,7 +21,7 @@
                 <img src="images/'.$row['PIC'].'" alt="" class="image-responsive " height="55%" width="65%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h5>USD . '.$row['PRICE'].'</h5>
-                <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control">View Item</a></p>
+                <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-dark form-control" style="background-color:#0A2558;">View Item</a></p>
             </div>';
         }
     }
@@ -30,11 +30,40 @@
     <h1 class="">Samsung Phones</h1> 
     <div class="row">
         
-        <?php include('SamsungMob.php')?> <br><br>
+    <?php 
+        $sql = "SELECT * FROM product where BNAME = 'Samsung' LIMIT 5";
+        $res = $conn->query($sql);
+
+        if($res->num_rows > 0){
+            while($row = $res ->fetch_assoc()){
+                echo '<div class="col-md-3 text-center">
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="75%"> <br><br>
+                <p><strong>'.$row['PNAME'].'</strong></p>
+                <h6>USD . '.$row['PRICE'].'</h6>
+                <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
+            </div>';
+        }
+    }
+    ?><br><br>
     </div> <br> <br>
     <h1 class=""> Mobile Accessories </h1>
     <div class="row">
-        <?php include('Redmi.php')?>
+    <?php 
+        $sql = "SELECT * FROM product where BNAME = 'Samsung' LIMIT 5";
+        $res = $conn->query($sql);
+
+        if($res->num_rows > 0){
+            while($row = $res ->fetch_assoc()){
+                echo '<div class="col-md-3 text-center">
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="75%"> <br><br>
+                <p><strong>'.$row['PNAME'].'</strong></p>
+                <h6>USD . '.$row['PRICE'].'</h6>
+                <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
+            </div>';
+        }
+    }
+    ?>
     </div>
+    
 
 </div>

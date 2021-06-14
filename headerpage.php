@@ -5,9 +5,14 @@
 <head>
 <?php include('head.php');?>
 <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  
+<!-- Add icon library -->
+
+
+<!-- Add font awesome icons -->
+
   <!-- MainSticky-->
   <div class="row header">
     <div class="col-md-2">
@@ -15,13 +20,11 @@
     </div> 
     <div class="col-md-10">
         <p>
-            <h1 class="heading" style="font-family: 'Limelight', cursive; font-weight:900px">MOBiCO
+            <h1 class="heading" style="font-family: 'Limelight', cursive;">MOBiCO
             <span style="font-size : 50%; font-family: 'Limelight', cursive;" class="">Dealers in Mobile and Accessories
             </span>
             </h1> 
-            
             <hr>
-            
         </p>
     </div>
 
