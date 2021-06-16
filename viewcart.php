@@ -18,6 +18,7 @@ session_start();
         <h1>&nbsp;&nbsp;Manage Your Cart</h1>
     </div>
         <a href="index.php" class="btn btn-dark btn-md m-2"><i class='bx bx-home' style='color:#ffffff'  ></i> Go Back To Front Page</a> 
+        
 <!-- navBar End -->
 
     <div class="container">
@@ -44,23 +45,29 @@ session_start();
             <?php 
             if(!empty($_SESSION['cart'])){
                 $total = 0;
+                $qty = 0;
+               
                 foreach($_SESSION['cart'] as $keys=>$values){
                     $amount = $values["qty"] * $values['price'] ;
                     $total  += $amount;
+                    $qty +=1;
+                    
                     echo "
                     <tr>
                     <td>{$values["pname"]}</td>
                     <td>USD. {$values['price']}</td>
                     <td>{$values["qty"]}</td>
-                    <td>USD. {$amount}</td>
+                    <td>Rs.{$amount}.00</td>
                     <td><a href='viewcart.php?del={$values["pid"]}' class='btn btn-danger btn-sm'>Remove</a></td>
                     
                     </tr>";
                 }
+                echo "<span class='m-3 text-dark'>Total number items you added : <button class='btn btn-secondary btn-sm'>{$qty}</btn></span>";
                 echo "<tr>
-                <td colspan='3'><strong>Grand Total</strong></td>
                 
-                <td>{$total}</td>
+                <td colspan='3'><strong>Grand Total</strong></td>
+                <td>Rs.{$total}.00</td>
+
                 </tr>";
             }
             else{

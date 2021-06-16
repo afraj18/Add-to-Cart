@@ -21,12 +21,13 @@
     <div class="col-md-10">
         <p>
             <h1 class="heading" style="font-family: 'Limelight', cursive;">MOBiCO
-            <span style="font-size : 50%; font-family: 'Limelight', cursive;" class="">Dealers in Mobile and Accessories
+            <span style="font-size : 65%; font-family: 'Limelight', cursive;" class=""> Dealers in Mobile and Accessories
             </span>
             </h1> 
             <hr>
         </p>
     </div>
+  </div>
 
     <!-- LogoutFunction -->
     <!-- <div class="col-md-2" role="group" aria-label="...">
@@ -53,6 +54,3 @@
           </form> 
       
     </div> -->
-    
-</div>
- 

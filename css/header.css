@@ -1,5 +1,5 @@
 .header {
-    background-color: white;
+    /* background-color: white; */
     top: 48px;
     /* shadow is at bottom of element, so at 48 + 16 = 64px */
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -23,7 +23,6 @@ hr {
 
 .heading {
     font-weight: bolder;
-    background-color: white;
     font-family: 'Limelight', cursive;
 }
 
@@ -44,4 +43,3 @@ hr {
         font-size: 1.6rem;
     }
 }
-

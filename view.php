@@ -10,18 +10,24 @@ include('dbh/config.php');
 </head>
 <body>
 <!-- navBar Start -->
-<div class="text-white py-3" style="background-color: #0A2558;">
-        <h1>&nbsp;&nbsp;Add to Cart</h1>
+<div class="text-white py-3 row" style="background-color: #0A2558;">
+        <div class="col-md-6">
+            <h1>&nbsp;&nbsp;View Product Details</h1>
+        </div>        
+        <div class="col-md-6 ">
+            <a href="index.php" class="btn btn-dark btn-md m-2 float-right"><i class='bx bx-home' style='color:#ffffff'  ></i> Go Back To Front Page</a> 
+            <a href="viewcart.php" class="btn btn-dark btn-md m-2 float-right"><i class='bx bx-cart' ></i>  Shopping Cart</a> 
+        </div>
     </div>
-        <a href="index.php" class="btn btn-dark btn-md m-2"><i class='bx bx-home' style='color:#ffffff'  ></i> Go Back To Front Page</a> 
-<!-- navBar End -->
+       
+        <!-- navBar End -->
 
-<div class="container">
-<h1 class="text-center">Add to cart in PHP</h1> <hr> 
-    <div class="row">
+
+<!-- <h1 class="text-center">Add to cart</h1> <hr>  -->
+
     
-    <div class="col-md-3 col-sm-4 col-lg-3">
-    <a href="index.php">Home</a>
+    
+    <!-- <a href="index.php">Home</a> -->
     <?php 
     if(isset($_POST["addCart"])){
         if(isset($_SESSION["cart"])){
@@ -71,7 +77,7 @@ include('dbh/config.php');
                echo "<form action='{$_SERVER["REQUEST_URI"]}' method='post'>
                <table class='table table-bordered text-center'>
                               <tr>
-                                  <td colspan ='2'><img src='images/{$row['PIC']}' alt='Phone'   width='75%' class='image-responsive' >
+                                  <td colspan ='2'><img src='images/{$row['PIC']}' alt='Phone'   width='20%' class='image-responsive' >
                                   </td>
                               </tr>
                               <tr>
@@ -89,7 +95,7 @@ include('dbh/config.php');
                               <tr>
                               <td>Price : </td>
                                   <td>
-                                      USD.{$row["PRICE"]}
+                                      Rs. {$row["PRICE"]}.00 
                                   </td>
                               </tr>
                               <tr>
@@ -121,8 +127,8 @@ include('dbh/config.php');
                               <tr>
                               <td> </td>
                                   <td>
-                                     <input type='submit' value='Add to Cart' name='addCart' class='btn btn-success'>
-                                  </td>
+                                     <input type='submit' value='Add to Cart' name='addCart' class='btn btn-primary m-2'>
+                                        <br> <span class='text-danger m-5'> Available Stock : {$row["STOCK"]}</span>                                  </td>
                               </tr>
                           </table>
                </form>";
@@ -138,9 +144,6 @@ include('dbh/config.php');
     
     
     ?>
-    </div>
-    </div>
-</div>
 
 
 

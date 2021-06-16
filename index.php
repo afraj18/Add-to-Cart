@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="css/main.css">
         <style>
             .mainNav {
-                background-color: #0A2558;
+                /* background-color: #0A2558; */
                 margin-top:24px;
                 
             }
-            
+            body{
+                background-color:#f5f5f5 !important;
+            }
+           
         </style>
     </head>
 <body> 
@@ -24,9 +27,8 @@
         <div class="col-md-3 mainNav rounded ">
         <?php include('sideBar.php');?>
         </div>  <!-- //Column One End -->
-        <div class="col-md-8">
-                <?php include_once('MobilePhone/mobile.php')?>
-            
+        <div class="col-md-9 salePanel">
+                <?php include('MobilePhone/mobile.php')?>
         </div>
         
     </div>

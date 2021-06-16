@@ -15,6 +15,7 @@
 <style>
   .navbar{
     background-color:#0A2558;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
 </style>
@@ -37,11 +38,12 @@
               </ul>
             
             </div> 
+
         
     
     
     <form class="form-inline my-2 my-lg-0 ">
-      <input class="form-control my-2 mr-sm-2 btn-sm" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control my-2 mr-sm-2 btn-sm " type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0 btn-sm" type="submit">Search</button>
     </form>
 </nav>
