@@ -65,34 +65,3 @@
 
 
 
-<!-- //List Group earlier Version of mine -->
-
-<!-- <form>
-                <fieldset>
-                    <div class="form-group">
-                        <a href="MobilePhone/ProductCat.php">
-                        <button type="button" class="btn btn-dark ml-2 mt-4 form-control text-left "><i class='bx bx-category bx-xs'></i>  Product Categories</button>
-                        </a>
-                    </div>
-                    <div class="form-group">
-                        <a href="viewcart.php">
-                        <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bx-cart' ></i>  Shopping Cart</button>
-                        </a>
-                    </div>
-                    <div class="form-group">
-                        <a href="wishList.php">
-                        <button type="button" class="btn btn-outline-light ml-2  form-control text-left"><i class='bx bx-heart'></i>  Wish List</button>
-                        </a>
-                    </div>
-                    <div class="form-group">
-                        <a href="#">
-                        <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bxs-comment-check '></i>  Latest Product Blogs and Reviews</button>
-                        </a>
-                    </div>
-                    <div class="form-group">
-                        <a href="#">
-                        <button type="button" class="btn btn-outline-light ml-2 form-control text-left"><i class='bx bxs-tag-alt' style='color:#fff'  ></i> </button>
-                        </a>
-                    </div>
-                </fieldset>
-           </form> -->

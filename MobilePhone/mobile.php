@@ -25,7 +25,7 @@
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h5>Rs. '.$row['PRICE'].'</h5>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control" style="background-color:#0A2558;">View Item</a></p>
-            </div>';
+                </div>';
         }
     }
     ?>
@@ -44,7 +44,7 @@
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6>Rs. '.$row['PRICE'].'</h6>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
-            </div>';
+                </div>';
         }
     }
     ?><br><br>
@@ -62,7 +62,7 @@
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6> Rs. '.$row['PRICE'].'</h6>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
-            </div>';
+                </div>';
         }
     }
     ?>
@@ -79,7 +79,7 @@
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6> Rs. '.$row['PRICE'].'</h6>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
-            </div>';
+                </div>';
         }
     }
     ?>
