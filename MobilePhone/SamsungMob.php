@@ -22,19 +22,21 @@
 <br>
 
 <!-- Product Display -->
+<div class="row">
 <?php 
        
-        $sql = "SELECT * FROM product where BNAME = 'Samsung'";
-        $res = $conn->query($sql);
+       $sql = "SELECT * FROM product where BNAME = 'Samsung'";
+       $res = $conn->query($sql);
 
-        if($res->num_rows > 0){
-            while($row = $res ->fetch_assoc()){
-                echo '<div class="col-md-3 mt-5 text-center">
-                <img src="../images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="80%"> <br><br>
-                <p><strong>'.$row['PNAME'].'</strong></p>
-                <h6>USD . '.$row['PRICE'].'</h6>
-                <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-md btn-dark form-control" style="background-color:#0A2558;">View Item</a></p> 
-            </div>';
-        }
-    }
-    ?>
+       if($res->num_rows > 0){
+           while($row = $res ->fetch_assoc()){
+               echo '<div class="col-md-3 border mt-5 text-center">
+               <img src="../images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="110%"> <br><br>
+               <p><strong>'.$row['PNAME'].'</strong></p>
+               <h6>USD . '.$row['PRICE'].'</h6>
+               <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-md btn-dark form-control" style="background-color:#0A2558;">View Item</a></p> 
+           </div>';
+       }
+   }
+   ?>
+</div>

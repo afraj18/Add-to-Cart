@@ -14,19 +14,23 @@ session_start();
 </style>
 <body>
 <!-- navbarStart -->
-    <div class="text-white py-3" style="background-color: #0A2558;">
-        <h1>&nbsp;&nbsp;Manage Your Cart</h1>
+    <div class="text-white py-3 row" style="background-color: #0A2558;">
+        <div class="col-6">
+            <h1>&nbsp;&nbsp;Manage Your Cart</h1>
+        </div>
+        <div class="col-6">
+            <a href="index.php" class="btn btn-dark btn-sm m-2 float-right"><i class='bx bx-home' style='color:#ffffff'  ></i> Home</a> 
+        </div>
     </div>
-        <a href="index.php" class="btn btn-dark btn-md m-2"><i class='bx bx-home' style='color:#ffffff'  ></i> Go Back To Front Page</a> 
+        
         
 <!-- navBar End -->
 
     <div class="container">
         <div class="row mt-2">
            
-          
             <table class="table table-bordered">
-            <tr>
+            <tr class="bg-dark text-light">
                 <th>Item Name</th>
                 <th>Price</th>
                 <th>Quantity</th>
@@ -53,7 +57,7 @@ session_start();
                     $qty +=1;
                     
                     echo "
-                    <tr>
+                    <tr class=''>
                     <td>{$values["pname"]}</td>
                     <td>USD. {$values['price']}</td>
                     <td>{$values["qty"]}</td>
@@ -62,7 +66,7 @@ session_start();
                     
                     </tr>";
                 }
-                echo "<span class='m-3 text-dark'>Total number items you added : <button class='btn btn-secondary btn-sm'>{$qty}</btn></span>";
+                echo "<span class='m-3 text-dark'>Total number items you added : <button class='btn btn-danger btn-sm'>{$qty}</btn></span>";
                 echo "<tr>
                 
                 <td colspan='3'><strong>Grand Total</strong></td>

@@ -4,7 +4,8 @@
     <?php include('../head.php');
         include('../dbh/config.php');
     ?>
- 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
 
 </head>
 <body>
@@ -25,18 +26,21 @@
 </div>
 <!-- navBar End -->
 <br>
+<div class="row">
 <?php 
-        $sql = "SELECT * FROM product where BNAME = 'Samsung'";
+        $sql = "SELECT * FROM product where BNAME = 'Redmi'";
         $res = $conn->query($sql);
 
         if($res->num_rows > 0){
             while($row = $res ->fetch_assoc()){
-                echo '<div class="col-md-3 mt-5 text-center">
-                <img src="../images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="75%"> <br><br>
+                echo '<div class="col-md-3 mt-5 border text-center">
+                <img src="../images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="110%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6>USD . '.$row['PRICE'].'</h6>
-                <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5 style="background-color:#0A2558;"">View Item</a></p> 
+                <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5 style="background-color:#0A2558 !important;"">View Item</a></p> 
             </div>';
         }
     }
     ?>
+
+</div>

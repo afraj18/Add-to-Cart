@@ -1,4 +1,7 @@
-<?php include_once('head.php'); ?>
+
+<?php include_once('head.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +19,7 @@
             .list-group-item {
                 background-color: #0A2558 !important;
                 border : 0px !important;
+                border-radius : round;
             }
             .list-group-item:hover{
                 background-color: #081d45 !important;
@@ -26,27 +30,37 @@
     </style>
 </head>
 <body>
-            <ul class="list-group">
-                <li class="list-group-item">
+        <div class="container clearfix d-flex justify-content-center flex-wrap">
+            <ul class="list-group  list-group-horizontal m-2 ">
+                <li class="list-group-item m-1 rounded">
                     <a href="MobilePhone/ProductCat.php">
                     <i class='bx bx-category bx-xs'></i>  Product Categories
                     </a>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item m-1 rounded">
                     <a href="viewcart.php">
                     <i class='bx bx-cart' ></i>  Shopping Cart
+                    <?php 
+                    
+                    // count products in cart
+                    $cart_count=count($_SESSION['cart']);
+                    ?>
+                    
+                    <span class="badge badge-light badge-pill ml-3 align-middle"> <?php echo $cart_count; ?></span> 
                     </a>
+                   
                 </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item m-1 rounded">
                     <a href="wishList.php">
                     <i class='bx bx-heart'></i>  Wish List
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item m-1 rounded">
                     <a href="#">
                     <i class='bx bxs-comment-check '></i>  Latest Product Blogs and Reviews
                     </a>
                 </li>
             </ul>
+        </div>
 
 
 

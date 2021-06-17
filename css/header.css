@@ -24,6 +24,7 @@ hr {
 .heading {
     font-weight: bolder;
     font-family: 'Limelight', cursive;
+    color: #0A2558 !important;
 }
 
 @include media-breakpoint-up(sm) {

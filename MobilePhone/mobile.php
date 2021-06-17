@@ -15,13 +15,13 @@
     <!-- <h1 class="font-weight-bold text-dark"> <i class="fab fa-apple m-1 fa-1x"> </i> Apple Phones</h1> <br>     -->
     <div class="row ">
     <?php 
-        $sql = "SELECT * FROM product where BNAME = 'Apple' limit 4";
+        $sql = "SELECT * FROM product where BNAME = 'Apple' limit 5";
         $res = $conn->query($sql);
 
         if($res->num_rows > 0){
             while($row = $res ->fetch_assoc()){
-                echo '<div class="col-md-3  text-center">
-                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive " height="55%" width="65%"> <br><br>
+                echo '<div class="col-md-3 text-center">
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive " height="70%" width="110%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h5>Rs. '.$row['PRICE'].'</h5>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control" style="background-color:#0A2558;">View Item</a></p>
@@ -34,13 +34,13 @@
     <div class="row">
         
     <?php 
-        $sql = "SELECT * FROM product where BNAME = 'Samsung' LIMIT 5";
+        $sql = "SELECT * FROM product where BNAME = 'Samsung' LIMIT 4";
         $res = $conn->query($sql);
 
         if($res->num_rows > 0){
             while($row = $res ->fetch_assoc()){
                 echo '<div class="col-md-3 text-center">
-                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="75%"> <br><br>
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="70%" width="110%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6>Rs. '.$row['PRICE'].'</h6>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
@@ -52,13 +52,30 @@
     <!-- <h1 class=""> Mobile Accessories </h1> -->
     <div class="row">
     <?php 
-        $sql = "SELECT * FROM product where BNAME = 'Samsung' LIMIT 5";
+        $sql = "SELECT * FROM product where BNAME = 'Redmi' LIMIT 4";
         $res = $conn->query($sql);
 
         if($res->num_rows > 0){
             while($row = $res ->fetch_assoc()){
                 echo '<div class="col-md-3 text-center">
-                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="60%" width="75%"> <br><br>
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="70%" width="110%"> <br><br>
+                <p><strong>'.$row['PNAME'].'</strong></p>
+                <h6> Rs. '.$row['PRICE'].'</h6>
+                <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 
+            </div>';
+        }
+    }
+    ?>
+    </div>
+    <div class="row">
+    <?php 
+        $sql = "SELECT * FROM product where BNAME = 'Huawei' LIMIT 4";
+        $res = $conn->query($sql);
+
+        if($res->num_rows > 0){
+            while($row = $res ->fetch_assoc()){
+                echo '<div class="col-md-3 text-center">
+                <img src="images/'.$row['PIC'].'" alt="" class="image-responsive" height="70%" width="110%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h6> Rs. '.$row['PRICE'].'</h6>
                 <p><a href="view.php?id='.$row['ID'].'" class="btn btn-dark form-control mb-5" style="background-color:#0A2558;">View Item</a></p> 

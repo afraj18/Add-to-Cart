@@ -25,8 +25,8 @@
 
         if($res->num_rows > 0){
             while($row = $res ->fetch_assoc()){
-                echo '<div class="col-md-3  mt-5 text-center">
-                <img src="../images/'.$row['PIC'].'" alt="" class="image-responsive " height="55%" width="65%"> <br><br>
+                echo '<div class="col-md-3 border mt-5 text-center">
+                <img src="../images/'.$row['PIC'].'" alt="" class="image-responsive " height="70%" width="110%"> <br><br>
                 <p><strong>'.$row['PNAME'].'</strong></p>
                 <h5>Rs. '.$row['PRICE'].'.00</h5>
                 <p><a href="../view.php?id='.$row['ID'].'" class="btn btn-dark form-control" style="background-color:#0A2558;">View Item</a></p>

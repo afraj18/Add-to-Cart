@@ -1,5 +1,8 @@
-<?php ?>
-
+<?php session_start()
+?>
+<?php
+$_SESSION['cart']=isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,16 +18,16 @@
 
   <!-- MainSticky-->
   <div class="row header">
-    <div class="col-md-2">
-        <img src="images/logo.jpg" alt="MOBiCO" class = " img">
+    <div class="col-md-1">
+        <img src="images/logo.png" width="100%" alt="MOBiCO" class = " ml-3 ">
     </div> 
-    <div class="col-md-10">
+    <div class="col-md-11">
         <p>
-            <h1 class="heading" style="font-family: 'Limelight', cursive;">MOBiCO
+            <h1 class="heading ml-4" style="font-family: 'Limelight', cursive; color:#0A2558;">MOBiCO
             <span style="font-size : 65%; font-family: 'Limelight', cursive;" class=""> Dealers in Mobile and Accessories
             </span>
             </h1> 
-            <hr>
+            <!-- <hr> -->
         </p>
     </div>
   </div>
